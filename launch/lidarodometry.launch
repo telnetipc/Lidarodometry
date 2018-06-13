@@ -1,0 +1,11 @@
+<launch>
+
+  <arg name="rviz" default="true" />
+
+  <node pkg="lidarodometry" type="scanRegistration" name="scanRegistration" output="screen"/>
+
+  <group if="$(arg rviz)">
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find lidarodometry)/rviz_cfg/lidarodometry.rviz" />
+  </group>
+
+</launch>
