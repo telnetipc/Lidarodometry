@@ -5,22 +5,6 @@ SRC=576
 #滤波器参数
 leafSize=1.0
 
-#Super4pcs参数
-delta=1.0
-overlap=0.75
-loop_overlap=0.7
-n_points=400
-loopn_points=600
-thr=0.95
-loop_thr=0.9
-min_LCP=0.85
-max_time_seconds=1
-max_translation_distance=20
-max_angle=10
-max_color=-1
-norm_diff=-1
-
-
 #ICP参数
 TransEpsilon=1e-10
 FitnessEpsilon=1e-3
